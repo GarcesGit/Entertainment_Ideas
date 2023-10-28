@@ -1,7 +1,7 @@
 let ideasData = {
     alone: {
         alone1: {
-            description: 'Покататься на САПе около Бугринского моста',
+            description: 'Покататься на САПе у Бугринского моста',
             photo: 'images/alone1.jpg'
         },
         alone2: {
@@ -79,8 +79,61 @@ let ideasData = {
     }
 };
 
+// function putTile (groups){
+let tile = document.querySelector('#tile');
 
-let select = document.querySelector('#select');
-select.addEventListener('change', function(){
-   console.log(this.value);
-});
+    for (let groups in ideasData) {
+        let subObj = ideasData[groups];
+        for (let idea in subObj) {
+            let subSubObj = subObj[idea];
+            let div = document.createElement('div');
+            let img = document.createElement('img');
+            let p = document.createElement('p');
+            for (let data in subSubObj) {
+
+                    img.src = subSubObj.photo;
+                    div.append(img);
+
+                    p.innerHTML = subSubObj.description;
+                    div.append(p);
+        }
+        tile.append(div);
+}
+}
+// }
+// putTile(groups);
+
+// function filterGroup (group){
+//     let select = document.querySelector('#select');
+//     select.addEventListener('change', function(){
+//         if (select.value == group) {
+//
+//                 switch (select.value) {
+//
+//                     case 'alone':
+//                     group = randomFilm(category.Action);
+//                     break;
+//
+//                     case 'family':
+//                     filmTitle.innerHTML = randomFilm(category.Drama);
+//                     break;
+//
+//                     case 'friends':
+//                     filmTitle.innerHTML = randomFilm(category.Fiction);
+//                     break;
+//             }
+//         }
+// });
+// }
+
+
+// console.log(groups); //= alone ...
+// console.log(idea); //= alone1...
+// console.log(subSubObj[data]); //= Покататься на САПе около Бугринского моста & images/alone1.jpg
+// console.log(data); //description & photo
+// console.log(subObj[idea].photo); //images/alone1.jpg
+//console.log(subSubObj.description); //Покататься на САПе около Бугринского моста
+// console.log(subSubObj.photo); //images/alone1.jpg
+// console.log(ideasData[groups]); //{alone1: {…}, alone2: {…},
+// console.log(groups[0]); //a
+// console.log(ideasData.alone);//{alone1: {…}, alone2: {…},
