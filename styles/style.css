@@ -1,52 +1,43 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     background-color: #F2FBDF;
 }
-
 #wrapper {
     width: 900px;
     margin: 30px auto;
     background-color: white;
 }
-
 p {
     margin: 5px auto;
     font: bold 15px Comic Sans MS;
     text-align: left;
     padding: 5px;
 }
-
 a {
     color: white;
 }
-
 header p {
 padding: 30px 30px;
     font: bold 40px Comic Sans MS;
     color: #DDF8A6;
 }
-
-header, footer{
+header, footer {
     background-image: linear-gradient(rgba(250, 250, 250, 0.3), rgba(250, 250, 250, 0.3)), url('../images/header.jpg');
     background-position: center;
     background-size: 100% auto;
 }
-
 #social {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 5px;
 }
-
-#social a img{
+#social a img {
     width: 120px;
     height: 25px;
 }
-
 nav {
     display: flex;
     width: 900px;
@@ -54,9 +45,7 @@ nav {
     justify-content: center;
     color: white;
 }
-
-nav a:link,
-nav a:visited  {
+nav a:link, nav a:visited  {
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -65,7 +54,6 @@ nav a:hover, nav a.active {
     text-decoration: underline;
     color: #465F15;
 }
-
 #container {
     height: 1800px;
     display: flex;
@@ -75,7 +63,6 @@ main {
     width: 90%;
     padding: 10px;
 }
-
 select {
     font: bold 20px Times New Roman;
     color: #82B61C;
@@ -83,12 +70,10 @@ select {
     height: 30px;
     margin: 10px;
 }
-
 h2 {
     margin: 20px 5px;
     color: #82B61C;
 }
-
 #text p {
     text-indent: 30px;
     font-size: 18px;
@@ -96,7 +81,6 @@ h2 {
     text-align: justify;
     padding: 10px;
 }
-
 #tile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -104,13 +88,11 @@ h2 {
     padding: 10px;
     width: 650px;
 }
-
 #tile > div {
     height: 210px;
     background-color: white;
     box-shadow:  5px 5px 5px grey;
 }
-
 #hr-shadow {
     margin: 20px 0;
     padding: 0;
@@ -119,19 +101,19 @@ h2 {
     border-top: 2px solid #465F15;
     box-shadow: 0 10px 10px -10px #465F15 inset;
 }
-
 img {
     width: 100%;
     height: 130px;
 }
-
 aside {
     padding: 20px;
 }
-
 footer {
     color: white;
     text-align: center;
     padding: 5px;
     font: 10px;
+}
+.hide {
+	display: none;
 }
