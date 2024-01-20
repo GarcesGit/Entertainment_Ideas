@@ -11,7 +11,7 @@ body {
 }
 p {
     margin: 5px auto;
-    font: bold 15px Comic Sans MS;
+    font: bold 15px 'Comic Sans MS';
     text-align: left;
     padding: 5px;
 }
@@ -37,6 +37,9 @@ header, footer {
 #social a img {
     width: 120px;
     height: 25px;
+}
+#social a {
+    text-decoration: none;
 }
 nav {
     display: flex;
@@ -64,7 +67,7 @@ main {
     padding: 10px;
 }
 select {
-    font: bold 20px Times New Roman;
+    font: bold 20px 'Times New Roman';
     color: #82B61C;
     width: 150px;
     height: 30px;

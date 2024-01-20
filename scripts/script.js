@@ -1,3 +1,5 @@
+"use strict";
+
 let ideasData = {
     alone: {
         alone1: {
@@ -137,17 +139,3 @@ function useFilter() {
     }
 }
 useFilter();
-
-
-
-
-// console.log(groups); //= alone ...
-// console.log(idea); //= alone1...
-// console.log(subSubObj[data]); //= Покататься на САПе около Бугринского моста & images/alone1.jpg
-// console.log(data); //description & photo
-// console.log(subObj[idea].photo); //images/alone1.jpg
-//console.log(subSubObj.description); //Покататься на САПе около Бугринского моста
-// console.log(subSubObj.photo); //images/alone1.jpg
-// console.log(ideasData[groups]); //{alone1: {…}, alone2: {…},
-// console.log(groups[0]); //a
-// console.log(ideasData.alone);//{alone1: {…}, alone2: {…},
